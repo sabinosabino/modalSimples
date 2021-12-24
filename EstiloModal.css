@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+.bg-modal-modelo{
+    /*
+    largura
+    altura
+    cor de fundo
+    posição fixada nos 100%
+    posiçao do elemento sobreposto ao outro
+    borda superior dele estará em -100% deslocado acima do indice de referencia que é a pagina
+    display estará em bloco um abaixo do outro
+    transição será de 350ms caso haja movimentação
+    */
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.75);
+    position: fixed;
+    z-index: 2;
+    top: -100%;
+    display: block;
+    transition: 350ms;
+}
+
+.modal-modelo{
+
+        /*
+    margim interna 10px
+    largura 
+    altura
+    cor do fundo
+    borda
+    borda arrendondada
+    margin
+    */
+    padding: 10px;
+    width: 60%;
+    height: 50%;
+    background-color: #fff;
+    border: 1px solid #000;
+    border-radius: 5px;
+    margin: 80px auto 0 auto;
+}
+
+.modal-modelo span{
+    /*
+    Retira do seu lado normal e deixa ele libre para se movimentar
+    tamanho da fonte
+    cor da font
+    margin
+    cursor mão
+    */
+    float: right;
+    font-size: 50px;
+    color: #000;
+    margin: 20px 20px;
+    cursor: pointer;
+}
+
+.modal-modelo span:hover{
+    /*
+    efeito ao sair
+    transição
+    */
+    color: #990000;
+    transition: 350ms;
+}
